@@ -46,9 +46,13 @@ Use the copy function below to do the following:
 */
 
 
-function copy(/*your code here*/){
-  /*your code here*/
+function copy(originalFlavors){
+  const copy1 = [...originalFlavors];
+  return(copy1);
 }
+
+
+
 
 
 
@@ -63,9 +67,16 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
-  /*your code here*/
+function is31Flavors(originalFlavors){
+  if (originalFlavors.length === 31){
+    return(true);
+  }
+  else {
+    return(false);
+  }
  }
+ console.log(is31Flavors(originalFlavors));
+
 
 
 
@@ -82,9 +93,11 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-  /*your code here*/
+function addFlavor(flavors, flavors2){
+  flavors.unshift(flavors2);
+  return(flavors);
  }
+ console.log(addFlavor(originalFlavors, "chocolate"));
 
 
 
@@ -100,9 +113,11 @@ Use the removeLastFlavor function below to do the following:
 */
 
 
-function removeLastFlavor(/*your code here*/){
- /*your code here*/
+function removeLastFlavor(originalFlavors){
+ originalFlavors.pop();
+ return(originalFlavors);
 }
+console.log(originalFlavors);
 
 
 
@@ -118,10 +133,10 @@ Use the getFlavorByIndex function below to do the following:
 */
 
 
-function getFlavorByIndex(/*your code here*/){
-  /*your code here*/
+function getFlavorByIndex(flavors, number){
+  return flavors[number];
 }
-
+console.log(getFlavorByIndex(originalFlavors, 6));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -138,8 +153,10 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(flavors, goof){
+  flavors.splice(5, 1);
+  for (let )
+
 }
 
 
